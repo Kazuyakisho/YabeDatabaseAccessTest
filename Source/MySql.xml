@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Connection>Server=127.0.0.1;Database=GenericDatabase;Uid=root;Pwd=genericdatabase;</Connection>
+  <Prefix>@</Prefix>
+  <ParameterAssembly>MySql.Data.dll</ParameterAssembly>
+  <ParameterType>MySql.Data.MySqlClient.MySqlParameter</ParameterType>
+  <Property>
+    <Name>Adapter</Name>
+    <Assembly>MySql.Data.dll</Assembly>
+    <Type>MySql.Data.MySqlClient.MySqlDataAdapter</Type>
+  </Property>
+  <Property>
+    <Name>Connection</Name>
+    <Assembly>MySql.Data.dll</Assembly>
+    <Type>MySql.Data.MySqlClient.MySqlConnection</Type>
+  </Property>
+  <Property>
+    <Name>Command</Name>
+    <Assembly>MySql.Data.dll</Assembly>
+    <Type>MySql.Data.MySqlClient.MySqlCommand</Type>
+  </Property>
+  <Property>
+    <Name>Builder</Name>
+    <Assembly>MySql.Data.dll</Assembly>
+    <Type>MySql.Data.MySqlClient.MySqlCommandBuilder</Type>
+  </Property>
+</root>

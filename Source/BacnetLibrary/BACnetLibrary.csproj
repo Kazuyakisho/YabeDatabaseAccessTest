@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E141897-17FF-489E-BDA1-E544A86BD16D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BacnetLibrary</RootNamespace>
+    <AssemblyName>BacnetLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PacketDotNet">
+      <HintPath>..\Dlls\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>..\Dlls\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BACnetBase\BACnetAddress.cs" />
+    <Compile Include="BACnetBase\BACnetBase.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnum.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACNetEnumBVLC.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumError.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumFlags.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumIds.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumLife.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumPTP.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumReasons.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumTags.cs" />
+    <Compile Include="BACnetBase\BACnetEnum\BACnetEnumTypes.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\APDU.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\ASN1.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\BVLC.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\EncodeBuffer.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\MSTP.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\NPDU.cs" />
+    <Compile Include="BACnetBase\BACnetSerialize\PTP.cs" />
+    <Compile Include="BACnetBase\BACnetServices.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetCOV.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructAccess.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructBitString.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructDateTime.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructDevice.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructError.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructEvent.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructLogRecord.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructObject.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructProperty.cs" />
+    <Compile Include="BACnetBase\BACnetStruct\BACnetStructValue.cs" />
+    <Compile Include="BACnetClient\BACnetAsyncResult.cs" />
+    <Compile Include="BACnetClient\BACnetClient.cs" />
+    <Compile Include="BACnetConverter\BACnetArrayIndexConverter.cs" />
+    <Compile Include="BACnetConverter\BACnetBitStringConverter.cs" />
+    <Compile Include="BACnetConverter\BACnetDeviceObjectPropertyReferenceConverter.cs" />
+    <Compile Include="BACnetConverter\BACnetEnumValueConverter.cs" />
+    <Compile Include="BACnetConverter\BACnetObjectIdentifierConverter.cs" />
+    <Compile Include="BACnetConverter\BACnetTimeConverter.cs" />
+    <Compile Include="BACnetConverter\ConvertString.cs" />
+    <Compile Include="BACnetConverter\CustomSingleConverter.cs" />
+    <Compile Include="BACnetConverter\DoubleConverter.cs" />
+    <Compile Include="BACnetConverter\DynamicEnumConverter.cs" />
+    <Compile Include="BACnetDeviceStorage\DeviceStorage.cs" />
+    <Compile Include="BACnetDeviceStorage\Object.cs" />
+    <Compile Include="BACnetDeviceStorage\Property.cs" />
+    <Compile Include="BACnetFile\BACnetFileTransfer.cs" />
+    <Compile Include="BACnetTransport\BACnetEthernetProtocolTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetIpUdpProtocolTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetMSTPProtocolTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetPipeTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetPTPProtocolTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetSerialPortTransport.cs" />
+    <Compile Include="BACnetTransport\BACnetTransportIPv6.cs" />
+    <Compile Include="BACnetTransport\IBacnetTransport.cs" />
+    <Compile Include="BACnetUtilities\BacnetBitStringToEnumListDisplay.cs" />
+    <Compile Include="BACnetUtilities\BACnetEnumValueDisplay.cs" />
+    <Compile Include="BACnetUtilities\BacnetTimePickerEditor.cs" />
+    <Compile Include="BACnetUtilities\CustomProperty.cs" />
+    <Compile Include="BACnetUtilities\CustomPropertyDescriptor.cs" />
+    <Compile Include="BACnetUtilities\DynamicEnum.cs" />
+    <Compile Include="BACnetUtilities\DynamicPropertyGridContainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

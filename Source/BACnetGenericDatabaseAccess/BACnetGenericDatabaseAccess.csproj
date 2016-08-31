@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F5B9D89-BF00-4540-A403-77B6D5473D88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BACnetGenericDatabaseAccess</RootNamespace>
+    <AssemblyName>BACnetGenericDatabaseAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=7.0.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.7.0.2-DMR\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.1.0-beta0001\lib\net451\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2013.4.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2013.4.7\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cov\Abstract\DBProviderCovAbstract.cs" />
+    <Compile Include="Cov\Enum\DBQueryEnum.cs" />
+    <Compile Include="Cov\Enum\DBServerAvailableEnum.cs" />
+    <Compile Include="Database\Abstract\DBAbstractFactoryCon.cs" />
+    <Compile Include="Cov\DBCovData.cs" />
+    <Compile Include="Database\Abstract\DBAbstractFactoryQuery.cs" />
+    <Compile Include="Database\Enum\EnumDBQueries.cs" />
+    <Compile Include="Database\Interface\IQuery.cs" />
+    <Compile Include="Database\Invoker\DataBases\MicrosoftSQL.cs" />
+    <Compile Include="Database\Invoker\DataBases\Odbc.cs" />
+    <Compile Include="Database\Invoker\DataBases\OleDb.cs" />
+    <Compile Include="Database\Invoker\DataBases\PostgreSql.cs" />
+    <Compile Include="Database\Invoker\DataBases\Queries\MicrosoftSQLQueries.cs" />
+    <Compile Include="Database\Invoker\DataBases\Queries\OdbcQueries.cs" />
+    <Compile Include="Database\Invoker\DataBases\Queries\OleDbQueries.cs" />
+    <Compile Include="Database\Invoker\DataBases\Queries\PostgreSqlQueries.cs" />
+    <Compile Include="Database\Invoker\DBClassInvoker.cs" />
+    <Compile Include="Database\Invoker\DataBases\MySql.cs" />
+    <Compile Include="ConfigDataProtection\Abstracts\AProtectData.cs" />
+    <Compile Include="Database\Enum\EnumDB.cs" />
+    <Compile Include="Database\DBProvider.cs" />
+    <Compile Include="Database\Abstract\DBAbstractConConfig.cs" />
+    <Compile Include="Database\Config\ConfigFileAccess\DBCollection.cs" />
+    <Compile Include="Cov\Interface\IDBCovDataItem.cs" />
+    <Compile Include="Cov\Interface\IDBCovSubscriber.cs" />
+    <Compile Include="Database\Invoker\DataBases\Queries\MySqlQueries.cs" />
+    <Compile Include="Cov\DBSubscriber.cs" />
+    <Compile Include="Database\Interface\IDbConnectionStringBuilder.cs" />
+    <Compile Include="DBFactoryTest.cs" />
+    <Compile Include="Services\DateTimeSettings.cs" />
+    <Compile Include="Utils\ProviderComparer.cs" />
+    <Compile Include="Database\Config\ConfigFileAccess\DBElement.cs" />
+    <Compile Include="Database\Config\ConfigFileAccess\DBSection.cs" />
+    <Compile Include="Database\Config\DBProviderConnectionConfigFile.cs" />
+    <Compile Include="DBFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigDataProtection\ProtectDataAES.cs" />
+    <Compile Include="Utils\StringConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BacnetLibrary\BACnetLibrary.csproj">
+      <Project>{5E141897-17FF-489E-BDA1-E544A86BD16D}</Project>
+      <Name>BACnetLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

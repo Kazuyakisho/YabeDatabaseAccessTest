@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BACnetGenericDatabaseAccess.Database.DBProvider">
+    <Position X="6" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAECQABAIgCAIQAVAIAAAwQIAAAAUAMAEAAAAAASABA=</HashCode>
+      <FileName>Database\DBProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.DBManager">
+    <Position X="3.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAJkAAAAACIAIRABAAAEFgQAAESAIAAAQAIDAAAAAIA=</HashCode>
+      <FileName>DBFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.ConfigDataProtection.Abstracts.AProtectData" Collapsed="true">
+    <Position X="10.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAAAAAAAQAAAAQAQAAAAEAAAAAAAgAIAAAAAA=</HashCode>
+      <FileName>ConfigDataProtection\Abstracts\AProtectData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.ConfigDataProtection.AProtectDataAes" Collapsed="true">
+    <Position X="10.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigDataProtection\ProtectDataAES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Cov.Abstract.DBProviderCovAbstract" Collapsed="true">
+    <Position X="17.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cov\Abstract\DBProviderCovAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Cov.DBCovData" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABABAIAAwAAAoAAAAAAAIIBDAgAIEQAAMAA=</HashCode>
+      <FileName>Cov\DBCovData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Cov.DBSubscriber">
+    <Position X="17.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Cov\DBSubscriber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Abstract.DBProviderConnectionConfig" Collapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Abstract\DBProviderConnectionConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Abstract.DBAbstractFactory" Collapsed="true">
+    <Position X="13" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAAIAAAAAAEAAAAEAAAAAAAAQQQAAAAAAAABAAE=</HashCode>
+      <FileName>Database\Abstract\DBProviderConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Config.ConfigFileAccess.DBCollection" Collapsed="true">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAAAICAAABAAAAAABAAAACAAAAABAAAA=</HashCode>
+      <FileName>Database\Config\ConfigFileAccess\DBCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Config.ConfigFileAccess.DBElement" Collapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAGAAAAAQAAA=</HashCode>
+      <FileName>Database\Config\ConfigFileAccess\DBElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Config.ConfigFileAccess.DBSection" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAEAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Config\ConfigFileAccess\DBSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Config.DBProviderConnectionConfigFile" Collapsed="true">
+    <Position X="12" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCgAAAAAAAAAAIAAAQAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Config\DBProviderConnectionConfigFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.MicrosoftSQL">
+    <Position X="8.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAAAAEAAAAEAAAAAAAAQQAAAAAAAAAAAAE=</HashCode>
+      <FileName>Database\Invoker\DataBases\MicrosoftSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.MySql" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAAAAEAAAAEAAAAAAAAQQAAAAAAAAAAAAE=</HashCode>
+      <FileName>Database\Invoker\DataBases\MySql.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Odbc" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAAAAEAAAAEAAAAAAAAQQAAAAAAAAAAAAE=</HashCode>
+      <FileName>Database\Invoker\DataBases\Odbc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.OleDb" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAAAAEAAAAEAAAAAAAAQQAAAAAAAAAAAAE=</HashCode>
+      <FileName>Database\Invoker\DataBases\OleDb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.PostgreSql" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAAAAEAAAAEAAAAAAAAQQAAAAAAAAAAAAE=</HashCode>
+      <FileName>Database\Invoker\DataBases\PostgreSql.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Queries.MicrosoftSQLQueries">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAAAABEAAAAAEAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Database\Invoker\DataBases\Queries\MicrosoftSQLQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Queries.MySQLQueries" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAAAABEAAAAAEAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Database\Invoker\DataBases\Queries\MySqlQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DBClassInvoker" Collapsed="true">
+    <Position X="16" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Database\Invoker\DBClassInvoker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Properties.Resources" Collapsed="true">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Properties.Settings" Collapsed="true">
+    <Position X="23.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Utils.ProviderComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\ProviderComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Utils.StringConverter" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\StringConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Queries.OdbcQueries" Collapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAAAABEAAAAAEAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Database\Invoker\DataBases\Queries\OdbcQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Queries.OleQueryAbstractFactory" Collapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAAAABEAAAAAEAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Database\Invoker\DataBases\Queries\OleDbQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BACnetGenericDatabaseAccess.Database.Invoker.DataBases.Queries.PostgreSqlQueries" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAAAABEAAAAAEAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Database\Invoker\DataBases\Queries\PostgreSqlQueries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BACnetGenericDatabaseAccess.Cov.Interface.IDBCovDataItem" Collapsed="true">
+    <Position X="13.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAIAAQAAAoAAAAAAAAABCAgAIEQAAMAA=</HashCode>
+      <FileName>Cov\Interface\IDBCovDataItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BACnetGenericDatabaseAccess.Cov.Interface.IDBCovSubscriber" Collapsed="true">
+    <Position X="15.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Cov\Interface\IDBCovSubscriber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BACnetGenericDatabaseAccess.Database.Interface.IDbConnectionStringBuilder" Collapsed="true">
+    <Position X="22.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Database\Interface\IDbConnectionStringBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BACnetGenericDatabaseAccess.Cov.Enum.DBQueryEnum" Collapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEAAAAAAAABAAAAAAAQAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Cov\Enum\DBQueryEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BACnetGenericDatabaseAccess.Cov.Enum.DBServerAvailableEnum" Collapsed="true">
+    <Position X="15.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Cov\Enum\DBServerAvailableEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BACnetGenericDatabaseAccess.Database.Enum.EnumDB" Collapsed="true">
+    <Position X="13.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgQAAABAAAAAACAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Enum\EnumDB.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BACnetGenericDatabaseAccess.Database.Enum.EnumDBQueries" Collapsed="true">
+    <Position X="23.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAEAAAAAAAAAAAAQAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Database\Enum\EnumDBQueries.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

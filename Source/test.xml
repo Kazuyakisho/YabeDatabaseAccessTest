@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Connection></Connection>
+  <Prefix></Prefix>
+  <ParameterAssembly></ParameterAssembly>
+  <ParameterType></ParameterType>
+  <Property>
+    <Name>Adapter</Name>
+    <Assembly></Assembly>
+    <Type></Type>
+  </Property>
+  <Property>
+    <Name>Connection</Name>
+    <Assembly></Assembly>
+    <Type></Type>
+  </Property>
+  <Property>
+    <Name>Command</Name>
+    <Assembly></Assembly>
+    <Type></Type>
+  </Property>
+  <Property>
+    <Name>Builder</Name>
+    <Assembly></Assembly>
+    <Type></Type>
+  </Property>
+</root>

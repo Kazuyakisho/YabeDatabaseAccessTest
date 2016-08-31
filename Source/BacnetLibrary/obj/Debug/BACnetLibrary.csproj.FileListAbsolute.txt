@@ -1,0 +1,8 @@
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\bin\Debug\BacnetLibrary.dll.config
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\bin\Debug\BacnetLibrary.dll
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\bin\Debug\BacnetLibrary.pdb
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\bin\Debug\PacketDotNet.dll
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\bin\Debug\SharpPcap.dll
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\obj\Debug\BacnetLibrary.dll
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\obj\Debug\BacnetLibrary.pdb
+D:\ProjectsVisualStudio\BacNetTest\BacNetExplorer\BacnetLibrary\obj\Debug\BACnetLibrary.csprojResolveAssemblyReference.cache
